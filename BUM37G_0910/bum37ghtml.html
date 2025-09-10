@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Git parancsok</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #d3d3d3;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #34495e;
+        }
+        
+        .parancs {
+            padding: 5px 0;
+        }
+        
+        .parancs-neve {
+            font-family: Courier New;
+            font-weight: bold;
+            color: rgb(0, 81, 255);
+            font-size: 16px;
+        }
+        
+        .leiras {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Git parancsok listája</h1>
+        
+        <h2>Beállítások</h2>
+        <div class="parancs">
+            <div class="parancs-neve">git config --global user.name "Név"</div>
+            <div class="leiras">Beállítja a nevedet</div>
+        </div>
+        
+        <div class="parancs">
+            <div class="parancs-neve">git config --global user.email "email@example.com"</div>
+            <div class="leiras">Beállítja az email címedet</div>
+        </div>
+        
+        <h2>Új projekt</h2>
+        <div class="parancs">
+            <div class="parancs-neve">git init</div>
+            <div class="leiras">Új git mappát csinál</div>
+        </div>
+        
+        <div class="parancs">
+            <div class="parancs-neve">git clone [link]</div>
+            <div class="leiras">Lemásol egy projektet a gépedre</div>
+        </div>
+        
+        <h2>Alap parancsok</h2>
+        <div class="parancs">
+            <div class="parancs-neve">git status</div>
+            <div class="leiras">Megmutatja mi változott</div>
+        </div>
+        
+        <div class="parancs">
+            <div class="parancs-neve">git add [fájl neve]</div>
+            <div class="leiras">Hozzáad egy fájlt a mentéshez</div>
+        </div>
+        
+        <div class="parancs">
+            <div class="parancs-neve">git add .</div>
+            <div class="leiras">Az összes változott fájlt hozzáadja</div>
+        </div>
+        
+        <div class="parancs">
+            <div class="parancs-neve">git commit -m "üzenet"</div>
+            <div class="leiras">Elmenti a változásokat üzenettel</div>
+        </div>
+        
+        <h2>Történet megnézése</h2>
+        <div class="parancs">
+            <div class="parancs-neve">git log</div>
+            <div class="leiras">Megmutatja a mentések listáját</div>
+        </div>
+        
+        <div class="parancs">
+            <div class="parancs-neve">git log --oneline</div>
+            <div class="leiras">Rövidebb lista a mentésekről</div>
+        </div>
+        
+        <div class="parancs">
+            <div class="parancs-neve">git diff</div>
+            <div class="leiras">Megmutatja pontosan mi változott</div>
+        </div>
+        
+        <h2>Branch-ek</h2>
+        <div class="parancs">
+            <div class="parancs-neve">git branch</div>
+            <div class="leiras">Kilistázza az ágakat</div>
+        </div>
+        
+        <div class="parancs">
+            <div class="parancs-neve">git branch [új név]</div>
+            <div class="leiras">Új ágat csinál</div>
+        </div>
+        
+        <div class="parancs">
+            <div class="parancs-neve">git checkout [ág neve]</div>
+            <div class="leiras">Átvált másik ágra</div>
+        </div>
+        
+        <div class="parancs">
+            <div class="parancs-neve">git merge [ág neve]</div>
+            <div class="leiras">Összekeveri két ágat</div>
+        </div>
+    </div>
+</body>
+</html>
