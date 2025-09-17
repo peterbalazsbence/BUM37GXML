@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Szövegformázás: sortörés, szóköz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: white;
+            color: black;
+        }
+        
+        h1 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        
+        .content {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        
+        .section {
+            margin-bottom: 20px;
+        }
+        
+        .indented {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Szövegformázás: sortörés, szóköz</h1>
+    
+    <div class="content">
+        <div class="section">
+            Ebbe a részbe a weblap tartalma kerül!
+        </div>
+        
+        <div class="section">
+            Ez egy újabb sor, amit az előző sor alá írunk.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Most írjunk be a forráskódba egy másik mondatot.
+        </div>
+        
+        <div class="section">
+            Név:<br>
+            Születésnap:<br>
+            Lakhely:<br>
+            Telefonszám:
+        </div>
+        
+        <div class="section">
+            Egyes sor.<br>
+            Kettes sor.<br>
+            Hármas sor.
+        </div>
+    </div>
+</body>
+</html>
