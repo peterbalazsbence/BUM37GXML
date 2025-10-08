@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Megjelenítési tulajdonság</title>
+  <style>
+    .box {
+      background-color: mediumpurple;
+      color: white;
+      margin: 2px;
+      padding: 5px;
+    }
+
+    .xy1-internal {
+      display: none;
+    }
+
+    .xy2-internal .box {
+      display: inline;
+    }
+
+    .xy3-internal .box {
+      display: block;
+    }
+
+    .xy4-internal .box {
+      display: inline-block;
+    }
+
+    .xy5-internal {
+      display: flex;
+      background-color: mediumseagreen;
+      padding: 5px;
+    }
+
+    .flex .box {
+      background-color: mediumpurple;
+    }
+
+    .xy2-internal, .xy3-internal, .xy4-internal {
+      padding: 5px;
+      background-color: mediumseagreen;
+    }
+  </style>
+</head>
+<body>
+  <h2>Megjelenítési tulajdonság</h2>
+
+  <p><strong>display: none:</strong></p>
+  <div class="xy1-internal">
+    <div class="box">PTI BSc 1</div>
+    <div class="box">PTI BSc 2</div>
+    <div class="box">PTI BSc 3</div>
+  </div>
+
+  <p><strong>display: inline:</strong></p>
+  <div class="xy2-internal">
+    <div class="box">PTI BSc 1</div>
+    <div class="box">PTI BSc 2</div>
+    <div class="box">PTI BSc 3</div>
+  </div>
+
+  <p><strong>display: block:</strong></p>
+  <p class="xy3-internal">
+    <span class="box">PTI BSc 1</span>
+    <span class="box">PTI BSc 2</span>
+    <span class="box">PTI BSc 3</span>
+  </p>
+
+  <p><strong>display: inline-block:</strong></p>
+  <div class="xy4-internal">
+    <div class="box">PTI BSc 1</div>
+    <div class="box">PTI BSc 2</div>
+    <div class="box">PTI BSc 3</div>
+  </div>
+
+  <p><strong>display: flex:</strong></p>
+  <div class="xy5-internal">
+    <div class="box">PTI BSc 1</div>
+    <div class="box">PTI BSc 2</div>
+    <div class="box">PTI BSc 3</div>
+  </div>
+</body>
+</html>

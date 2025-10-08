@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista készítése</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 20px;
+            background-color: white;
+        }
+        
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        
+        .container {
+            display: flex;
+            gap: 100px;
+        }
+        
+        .basic-list {
+            list-style-type: disc;
+            color: red;
+            margin-left: 20px;
+        }
+        
+        .basic-list li {
+            color: black;
+        }
+        
+        .blue-square-list {
+            list-style-type: square;
+            color: blue;
+            margin-left: 20px;
+        }
+        
+        .blue-square-list li {
+            color: blue;
+        }
+        
+        .ordered-list {
+            margin-left: 20px;
+        }
+        
+        .uppercase-list {
+            list-style-type: upper-alpha;
+            margin-left: 20px;
+        }
+        
+        .roman-list {
+            list-style-type: upper-roman;
+            margin-left: 20px;
+        }
+        
+        .inline-section h2 {
+            margin-top: 30px;
+        }
+        
+        .piros { color: red }
+        
+        dt {
+            color: #0099FF;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        
+        dd {
+            color: #0099FF;
+            margin-left: 20px;
+            margin-bottom: 5px;
+        }
+        
+        .embedded-section h2 {
+            font-style: italic;
+        }
+        
+        .embedded-list {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        
+        .embedded-list ul {
+            list-style-type: circle;
+            margin-left: 20px;
+        }
+        
+        .control-list {
+            list-style-type: upper-alpha;
+            margin-left: 20px;
+        }
+        
+        .control-list li:nth-child(1) { list-style-type: none; }
+        .control-list li:nth-child(1)::before { content: "5. "; }
+        
+        .control-list li:nth-child(2) { list-style-type: none; }
+        .control-list li:nth-child(2)::before { content: "6. "; }
+        
+        .control-list li:nth-child(3) { list-style-type: none; }
+        .control-list li:nth-child(3)::before { content: "7. "; }
+    </style>
+</head>
+<body>
+    <h1>Lista készítése</h1>
+    
+    <div class="container">
+        <div class="left-column">
+            <h2>a. Rendezetlen lista</h2>
+            <ul class="basic-list">
+                <li>piros</li>
+                <li>kék</li>
+                <li>sárga</li>
+                <li>barna</li>
+            </ul>
+            
+            <ul class="blue-square-list">
+                <li>sárga</li>
+                <li>fehér</li>
+                <li>zöld</li>
+                <li>kék</li>
+            </ul>
+            
+            <h2>b. Rendezett lista</h2>
+            <ol class="ordered-list">
+                <li>pink</li>
+                <li>kék</li>
+                <li>sárga</li>
+                <li>barna</li>
+            </ol>
+            
+            <h2>c. Nagybetűk</h2>
+            <ol class="uppercase-list">
+                <li>pink</li>
+                <li>kék</li>
+                <li>sárga</li>
+                <li>barna</li>
+            </ol>
+            
+            <h2>d. Római számok</h2>
+            <ol class="roman-list">
+                <li>I. ÉVF</li>
+                <li>II. ÉVF</li>
+                <li>III. ÉVF</li>
+            </ol>
+        </div>
+        
+        <div class="right-column">
+            <div class="inline-section">
+                <h2>e. Inline style</h2>
+                <p class="piros">
+                    <span">A. Sárga</span><br>
+                    <span>B. Kék</span><br>
+                    <span>C. Zöld</span><br>
+                    <span>D. Pink</span>
+                </p>
+            </div>
+            
+            <h2>f. HTML Description Lists</h2>
+            <dl>
+                <dt>Farkas</dt>
+                <dd>Kutyaszerű ragadozó emlős</dd>
+                
+                <dt>Fájl</dt>
+                <dd>Szöveges állomány</dd>
+                
+                <dt>Oroszlán</dt>
+                <dd>Macskeszerű ragadozó emlős</dd>
+                <dd>Az állatok királya</dd>
+            </dl>
+            
+            <div class="embedded-section">
+                <h2>g. Embedded HTML lists</h2>
+                <p style="color: violet; font-weight:bold;">Kedvenc reggeli italaim</p>
+                <ul class="embedded-list">
+                    <li>Kávé</li>
+                    <li>Tea
+                        <ul>
+                            <li>Fekete</li>
+                            <li>Zöld</li>
+                        </ul>
+                    </li>
+                    <li>Tej</li>
+                </ul>
+            </div>
+            
+            <h2>h. Control List Counting</h2>
+            <ol class="control-list">
+                <li>KL</li>
+                <li>ÉL</li>
+                <li>BL</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
