@@ -2,171 +2,35 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neumann János</title>
-    <style>
-        body {
-            font-family: 'Times New Roman', serif;
-            background-color: #f5f5dc;
-            margin: 0;
-            padding: 20px;
-        }
-        
-        .container {
-            max-width: 700px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 40px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        
-        h1 {
-            text-align: center;
-            font-size: 36px;
-            font-style: italic;
-            text-decoration: underline;
-            margin-bottom: 20px;
-        }
-        
-        .quote {
-            text-align: center;
-            font-style: italic;
-            font-size: 14px;
-            margin-bottom: 30px;
-            line-height: 1.6;
-        }
-        
-        .photo-box {
-            border: 3px solid #333;
-            padding: 15px;
-            margin: 30px auto;
-            width: fit-content;
-            background-color: #e8e8e8;
-        }
-        
-        .photo-title {
-            text-align: center;
-            font-weight: bold;
-            margin-bottom: 10px;
-            background-color: #999;
-            padding: 5px;
-        }
-        
-        .photo-box img {
-            display: block;
-            width: 200px;
-            height: auto;
-            margin: 0 auto 15px;
-        }
-        
-        .info {
-            font-size: 14px;
-            line-height: 1.8;
-        }
-        
-        .info p {
-            margin: 5px 0;
-        }
-        
-        .label {
-            font-weight: bold;
-        }
-        
-        .isk {
-            margin-top: 15px;
-        }
-        
-        .isk ul {
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-        
-        .isk li {
-            margin: 5px 0;
-        }
-        
-        .content {
-            text-align: justify;
-            line-height: 1.8;
-            margin-top: 30px;
-        }
-        
-        .content p {
-            margin: 15px 0;
-            text-indent: 30px;
-        }
-    </style>
+    <title>Képek beillesztése és formázása</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Neumann János</h1>
-        
-        <div class="quote">
-            "A matematikában az ember nem megérti a dolgokat, hanem megszokja." - Neumann János
-        </div>
-        
-        <p style="text-align: justify;">
-            <strong>Margittai Neumann János Lajos</strong> (születési nevén <strong>Neumann János Lajos</strong>; 
-            Budapest, 1903. december 28. - Washington, 1957. február 8.) magyar születésű 
-            matematikus. A matematikatörténet egyetlen tudomány több ágát lefedő óriása volt.
+    <h2 style="font-weight:bold;">Képek beillesztése és formázása</h2>
+
+    <div style="width:400px;"> 
+        <a href="bum37g_gyumolcs.html"><img src="kepek/gyümölcs.jpg" alt="Gyümölcsök" 
+             style="float:left; width:100px; height:auto; margin-right:10px; margin-bottom:5px;"></a>
+        <p>
+            Ez egy szöveg, amit arra használunk, hogy a kép körül jelenjen majd meg. 
+            Ha sikerül, akkor a kép körül lesz folytatva a szöveggel (legalábbis a kép két oldala). 
+            Így már sokkal szebben be tudunk illeszteni képeket a weblapunkra!
+            <a href="https://elearning.uni-miskolc.hu" target="_blank">Kattints ide</a>
+            az e-learning oldal megnyitásához!
         </p>
-        
-        <div class="photo-box">
-            <div class="photo-title">Neumann János</div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/JohnvonNeumann-LosAlamos.jpg/220px-JohnvonNeumann-LosAlamos.jpg" alt="Neumann János">
-            <div class="info">
-                <p><span class="label">Született:</span> 1903. december 28.</p>
-                <p><span class="label">Meghalt: </span>Budapest, 1957. február 8. (53 évesen)</p>
-                <p><span class="label">Munkássága:</span>Egyetemi oktató, matematikus, informatikus, 
-                fizikus, közgazdász.</p>
-                <p><span class="label">Állampolgársága:</span> magyar, amerikai</p>
-                
-                <div class="isk">
-                    <p><span class="label">Iskolái:</span></p>
-                    <ul>
-                        <li>Budapest Fasori Evangélikus Gimnázium</li>
-                        <li>Pázmány Péter Egyetem</li>
-                        <li>Institute for Advanced Study</li>
-                        <li>Tudományegyetem</li>
-                        <li>Berlini Műegyetem</li>
-                    </ul>
-                </div>
-                <div class="kitunt">
-                    <p><span class="label">Szakmai kitüntetések:</span></p>
-                    <ul>
-                        <li>Bôcher Memorial Prize (1938)</li>
-                        <li>Medal for Merit (1947)</li>
-                        <li>Medal of Freedom (1956)</li>
-                        <li>Enrico Fermi-díj (1956)</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        
-        <div class="content">
-            <p>
-                Neumann kiemelkedő matematikus és számítástechnikusi újító, a kvantummechanika 
-                egyik kidolgozója volt. A legkülönbözőbb területeken fejlesztett ki fontos 
-                elméleteket és új tudásterületeket, sőt összekötötte őket! Mindenesetre 
-                úgy hívták Neumann János munkásságát: "tiszta matematika", amely a "gyakorlatias" 
-                nyíltan megjelöli eredményeit.
-            </p>
-            
-            <p>
-                A számítástechnikában Neumann János játszotta a célját, akit közvetlen után újat ki az egyik 
-                matematikai fejlemény iskolája. Állam keresztül köreztette ki a következő programozást-elvű 
-                célpontokat ki, ezekkel együttműködés alatt a mai modern számítógépünk támlácskészí ki 
-                melykülső tekinteti. Példázó figyelt ki "Neumann-architektúra", amely egy, éves 
-                számítógép-architektúra amelyben a program és az előző sajátságos az imorálható 
-                irathon.
-            </p>
-            
-            <p>
-                Neumann János munkásság szerepeit szekciális volt által ki két hossz által Általa összekötött az 
-                matematikus, a megengedés a tárolása vagy az iskolások következte a számotyra a két 
-                nagy hullámlát egy és modern tudományos és technológiai következések.
-            </p>
-        </div>
+    </div>
+    <div>
+        <p>
+        <a href="https://uni-miskolc.hu" target="_blank">Kattints ide, ha meg szeretnéd nyitni az uni-miskolc.hu oldalt.</a>
+        </p>
+        <p>
+        <a href="neptunkod_iit.html" target="_blank">Ide kattintva megnyílik az iit oldal</a>
+        </p>
+        <p>
+        <a href="bum37g_gyumolcs.html">Ide kattintva megjelenik a gyümölcs kép</a>
+    </p></div>
+
+    <div style="display:block; margin-top:20px; clear:both;">
+        <img src="kepek/iit.jpg" alt="Épület" style="width:500px; height:auto;">
     </div>
 </body>
 </html>
