@@ -1,0 +1,43 @@
+.table {
+    border-collapse: collapse;
+    margin: auto;
+    text-align: center;
+    width: 400px;
+    height:400px;
+}
+
+.table th, .table td {
+    border: 1px solid black;
+    padding: 10px;
+    font-weight: bold;
+}
+.fejlec{
+    background-color: lightgray;
+    color: black;
+    font-weight: bold;
+    height:20px;
+}
+
+.red {
+    background-color: red;
+    color: black;
+}
+
+.beige {
+    background-color: rgb(231, 231, 158);
+    color: black;
+    font-weight: normal;
+}
+
+.yellow {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.scroll {
+    background-color: rgb(231, 231, 158);
+    height: 50px;
+    overflow: scroll;
+    text-align: left;
+    font-weight: normal;
+}
