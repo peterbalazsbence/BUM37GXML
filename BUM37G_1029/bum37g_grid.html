@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    body {
+      font-family: Arial;
+    }
+    .wrapper{
+        display:grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-auto-rows: 100px;
+    }
+    *{
+        box-sizing:border-box;
+    }
+
+    .wrapper{
+        border: 2px solid red;
+        border-radius: 5px;
+        background-color: grey;
+    }
+
+    .wrapper>div{
+        border: 2px solid lightcoral;
+        border-radius: 5px;
+        background-color: lightgray;
+        padding: 1em;
+        color: red;
+    }
+  </style>
+</head>
+<body>
+    <h1>A gap tulajdonság több oszlopos elrendezéssel</h1>
+    <p>Többoszlopos elrendezésben a <em>gap</em> tulajdonsággal adhatja meg az oszlopok közötti távolságot.</p>
+    <p>A többoszlopos elrendezésnél az oszlopak közötti távolság 50px</p>
+    <div id="hirlap">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt praesentium modi ullam repellat architecto pariatur iusto, alias quasi. Amet ratione porro inventore aliquam nobis fuga delectus quod a ducimus placeat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem provident tempora voluptatum molestias ipsum animi obcaecati quaerat ex impedit dolorum unde ea id, nostrum eius, officiis eaque enim exercitationem perferendis.
+    </div>
+</body>
+</html>
