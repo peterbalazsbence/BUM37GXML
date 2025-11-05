@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videó lejátszása - Bum37g</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #fff;
+    }
+
+    header, footer {
+      text-align: left;
+      padding: 10px;
+    }
+
+    video {
+      width: 480px;
+      display: block;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+    }
+
+    .controls {
+      display: flex;
+      gap: 40px;
+      margin-top: 10px;
+    }
+
+    .oszlop {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .sor {
+      display: flex;
+      gap: 8px;
+      justify-content: flex-start;
+    }
+
+    button {
+      border: 1px solid #666;
+      background-color: #d9eaff;
+      cursor: pointer;
+      border-radius: 6px;
+      padding: 6px;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background-color: #b8d4ff;
+    }
+
+    .material-symbols-outlined {
+      font-size: 24px;
+      color: #000;
+    }
+
+    footer {
+      font-size: 12px;
+      color: gray;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Videó lejátszása - Bum37g</h2>
+  </header>
+
+  <main>
+    <video id="myVideo" controls>
+      <source src="bum37g_video1.mp4" type="video/mp4">
+      A böngésző nem támogatja a videó lejátszását.
+    </video>
+
+    <div class="controls">
+
+      <!-- bal -->
+      <div class="oszlop">
+        <div class="sor">
+          <button onclick="playVideo()" title="indítás"><span class="material-symbols-outlined">play_arrow</span></button>
+          <button onclick="pauseVideo()" title="leállítás"><span class="material-symbols-outlined">stop</span></button>
+        </div>
+
+        <div class="sor">
+          <button onclick="setVolume(0)" title="néma"><span class="material-symbols-outlined">volume_off</span></button>
+          <button onclick="setVolume(0.3)" title="halk"><span class="material-symbols-outlined">volume_down</span></button>
+          <button onclick="setVolume(1)" title="hangos"><span class="material-symbols-outlined">volume_up</span></button>
+        </div>
+
+        <div class="sor">
+          <button onclick="setVideoSize('small')" title="kicsi"><span class="material-symbols-outlined">photo_size_select_small</span></button>
+          <button onclick="setVideoSize('normal')" title="mormál"><span class="material-symbols-outlined">photo_size_select_large</span></button>
+          <button onclick="setVideoSize('large')" title="nagy"><span class="material-symbols-outlined">crop_original</span></button>
+        </div>
+      </div>
+
+      <!-- jobb -->
+      <div class="oszlop">
+        <div class="sor">
+          <button onclick="togglePlay()" title="indítás / leállítás"><span class="material-symbols-outlined">play_pause</span></button>
+        </div>
+
+        <div class="sor">
+          <button onclick="setSpeed(0.25)" title="nagyon lassú"><span class="material-symbols-outlined">slow_motion_video</span></button>
+          <button onclick="setSpeed(0.5)" title="lassú"><span class="material-symbols-outlined">fast_rewind</span></button>
+          <button onclick="setSpeed(1)" title="normál"><span class="material-symbols-outlined">play_arrow</span></button>
+          <button onclick="setSpeed(1.5)" title="gyorsabb"><span class="material-symbols-outlined">fast_forward</span></button>
+          <button onclick="setSpeed(2)" title="nagyon gyors"><span class="material-symbols-outlined">double_arrow</span></button>
+        </div>
+
+        <div class="sor">
+          <button onclick="checkEnded()" title="befejeződött-e"><span class="material-symbols-outlined">check</span></button>
+          <button onclick="showDuration()" title="videó hossza (mp)"><span class="material-symbols-outlined">timer</span></button>
+          <button onclick="showPosition()" title="jelenlegi pozíció"><span class="material-symbols-outlined">schedule</span></button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    Forrás: <a href="https://fonts.google.com/icons" target="_blank">Google Fonts / Material Symbols</a>
+  </footer>
+
+  <script>
+    const video = document.getElementById("myVideo");
+
+    function playVideo() { video.play(); }
+    function pauseVideo() { video.pause(); }
+    function togglePlay() {
+      if (video.paused) video.play();
+      else video.pause();
+    }
+
+    function setVolume(level) { video.volume = level; }
+    function setSpeed(rate) { video.playbackRate = rate; }
+
+    function checkEnded() {
+      alert(video.ended ? "A videó befejeződött." : "A videó még nem ért véget.");
+    }
+
+    function showDuration() {
+      alert("A videó hossza: " + video.duration.toFixed(2) + " mp");
+    }
+
+    function showPosition() {
+      alert("Jelenlegi pozíció: " + video.currentTime.toFixed(2) + " mp");
+    }
+
+    function setVideoSize(size) {
+      if (size === "small") video.style.width = "240px";
+      else if (size === "normal") video.style.width = "480px";
+      else if (size === "large") video.style.width = "720px";
+    }
+  </script>
+</body>
+</html>
