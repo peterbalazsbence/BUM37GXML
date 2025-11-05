@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videó lejátszása_Bum37g</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 30px;
+        background-color: #fff;
+    }
+    header {
+        text-align: left;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    video {
+        display: block;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+    }
+    .controls {
+        text-align: left;
+        margin-top: 10px;
+    }
+    button {
+        margin: 3px;
+        padding: 5px 10px;
+    }
+    footer {
+        font-size: 12px;
+        color: gray;
+        margin-top: 20px;
+        margin-left: 200px;
+        padding:10x;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Videó lejátszása_Bum37g</h1>
+  </header>
+
+  <main>
+    <video id="myVideo" width="480">
+      <source src="bum37g_video.mp4" type="video/mp4">
+      A böngésző nem támogatja a videó lejátszását.
+    </video>
+
+    <div class="controls">
+      <div>
+        <button onclick="playVideo()">indítás</button>
+        <button onclick="pauseVideo()">leállítás</button>
+        <button onclick="togglePlay()">indítás / leállítás</button>
+      </div>
+
+      <div>
+        <button onclick="setVolume(0)">néma</button>
+        <button onclick="setVolume(0.3)">halk</button>
+        <button onclick="setVolume(1)">hangos</button>
+      </div>
+
+      <div>
+        <button onclick="setSpeed(0.3)">nagyon lassú</button>
+        <button onclick="setSpeed(0.65)">lassú</button>
+        <button onclick="setSpeed(1)">normál</button>
+        <button onclick="setSpeed(1.5)">gyorsabb</button>
+        <button onclick="setSpeed(2)">nagyon gyors</button>
+      </div>
+
+      <div>
+        <button onclick="checkEnded()">befejeződött-e</button>
+        <button onclick="showDuration()">videó hossza (mp)</button>
+        <button onclick="showPosition()">jelenlegi pozíció</button>
+      </div>
+    </div>
+
+    <footer>
+      Forrás: <a href="https://www.w3schools.com/html/html5_video.asp" target="_blank">www.w3schools.com/html/html5_video.asp</a>
+    </footer>
+  </main>
+
+  <script>
+    const video = document.getElementById('myVideo');
+
+    function playVideo() {
+      video.play();
+    }
+
+    function pauseVideo() {
+      video.pause();
+    }
+
+    function togglePlay() {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    }
+
+    function setVolume(level) {
+      video.volume = level;
+    }
+
+    function setSpeed(rate) {
+      video.playbackRate = rate;
+    }
+
+    function checkEnded() {
+      alert(video.ended ? "A videó befejeződött." : "A videó még nem ért véget.");
+    }
+
+    function showDuration() {
+      alert("A videó hossza: " + video.duration.toFixed(2) + " mp");
+    }
+
+    function showPosition() {
+      alert("Jelenlegi pozíció: " + video.currentTime.toFixed(2) + " mp");
+    }
+  </script>
+</body>
+</html>
