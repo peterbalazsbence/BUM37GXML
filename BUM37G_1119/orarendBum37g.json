@@ -1,0 +1,139 @@
+{
+    "BUM37G_orarend": {
+      "ora": [
+        {
+          "targy": "Elektrotechnika-elektronika",
+          "idopont": {
+            "nap": "hetfo",
+            "tol": 8,
+            "ig": 10
+          },
+          "helyszin": "E3",
+          "oktato": "Dr. Kovács János",
+          "szak": "Mérnökinformatikus"
+        },
+        {
+          "targy": "Web technológiák 1.",
+          "idopont": {
+            "nap": "hetfo",
+            "tol": 10,
+            "ig": 12
+          },
+          "helyszin": "E3",
+          "oktato": "Dr. Kovács János",
+          "szak": "Mérnökinformatikus"
+        },
+        {
+          "targy": "Mobil programozási alapok",
+          "idopont": {
+            "nap": "hetfo",
+            "tol": 16,
+            "ig": 18
+          },
+          "helyszin": "B2-105",
+          "oktato": "Nagy Péter",
+          "szak": "Mérnökinformatikus"
+        },
+        {
+          "targy": "Mobil programozási alapok",
+          "idopont": {
+            "nap": "hetfo",
+            "tol": 18,
+            "ig": 20
+          },
+          "helyszin": "B2-105",
+          "oktato": "Nagy Péter",
+          "szak": "Mérnökinformatikus"
+        },
+        {
+          "targy": "Windows rendszergazda",
+          "idopont": {
+            "nap": "kedd",
+            "tol": 8,
+            "ig": 10
+          },
+          "helyszin": "C1-301",
+          "oktato": "Dr. Szabó Anna",
+          "szak": "Mérnökinformatikus"
+        },
+        {
+          "targy": "Mesterséges intelligencia alapok",
+          "idopont": {
+            "nap": "kedd",
+            "tol": 10,
+            "ig": 12
+          },
+          "helyszin": "B2-105",
+          "oktato": "Nagy Péter",
+          "szak": "Mérnökinformatikus"
+        },
+        {
+          "targy": "Mesterséges intelligencia alapok",
+          "idopont": {
+            "nap": "kedd",
+            "tol": 12,
+            "ig": 14
+          },
+          "helyszin": "B2-105",
+          "oktato": "Nagy Péter",
+          "szak": "Mérnökinformatikus"
+        },
+        {
+          "targy": "Windows rendszergazda",
+          "idopont": {
+            "nap": "kedd",
+            "tol": 16,
+            "ig": 18
+          },
+          "helyszin": "C1-301",
+          "oktato": "Dr. Szabó Anna",
+          "szak": "Mérnökinformatikus"
+        },
+        {
+          "targy": "Webes adatkezelő környezetek",
+          "idopont": {
+            "nap": "szerda",
+            "tol": 8,
+            "ig": 10
+          },
+          "helyszin": "C1-301",
+          "oktato": "Dr. Szabó Anna",
+          "szak": "Mérnökinformatikus"
+        },
+        {
+          "targy": "Webes adatkezelő környezetek",
+          "idopont": {
+            "nap": "szerda",
+            "tol": 10,
+            "ig": 12
+          },
+          "helyszin": "103",
+          "oktato": "Bednarik László",
+          "szak": "Mérnökinformatikus"
+        },
+        {
+          "targy": "Web technológiák 1.",
+          "idopont": {
+            "nap": "szerda",
+            "tol": 12,
+            "ig": 14
+          },
+          "helyszin": "101",
+          "oktato": "Bednarik László",
+          "szak": "Mérnökinformatikus"
+        },
+        {
+          "targy": "Elektrotechnika-elektronika",
+          "idopont": {
+            "nap": "szerda",
+            "tol": 14,
+            "ig": 16
+          },
+          "helyszin": "A207",
+          "oktato": "Tamás János",
+          "szak": "Mérnökinformatikus"
+        }
+      ]
+    }
+  }
+  

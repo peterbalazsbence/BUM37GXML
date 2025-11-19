@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Tömbökön belüli tömbök ciklusa</title>
+</head>
+<body>
+
+<h2>Tömbökön belüli tömbök ciklusa</h2>
+
+<div id="content"></div>
+
+<script>
+    const PBObj = {
+        "name": "PB",
+        "age": 21,
+        "cars": [
+            {"name": "Toyota", "models": ["CHR", "Corolla", "Proace"]},
+            {"name": "Ford", "models": ["Kuga", "Mondeo", "Mustang"]},
+            {"name": "BMW", "models": ["320", "X3", "X5"]},
+            {"name": "Fiat", "models": ["500", "Panda", "Tipo"]}
+        ]
+    };
+
+    const div = document.getElementById("content");
+
+    div.innerHTML += `<h3>${PBObj.name} (${PBObj.age})</h3>`;
+
+    for (let i = 0; i < PBObj.cars.length; i++) {
+        const car = PBObj.cars[i];
+
+        div.innerHTML += `<strong style="font-size: 20px">${car.name}:</strong><br>`;
+
+        div.innerHTML += "<ul>";
+        for (let j = 0; j < car.models.length; j++) {
+            div.innerHTML += `<li>${car.models[j]}</li>`;
+        }
+        div.innerHTML += "</ul>";
+        div.innerHTML += "<br>";
+    }
+</script>
+
+</body>
+</html>

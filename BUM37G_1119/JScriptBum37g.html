@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUM37G Órarend 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 20px;
+        }
+        h1 {
+            color: #0056b3;
+        }
+        #orarend {
+            margin-top: 20px;
+        }
+        .orarend-item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        .orarend-item h3 {
+            color: #0056b3;
+            font-size: 1.2em;
+        }
+        .orarend-item p {
+            font-size: 1em;
+            margin: 5px 0;
+        }
+        .orarend-item p strong {
+            color: #555;
+        }
+        button {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #003f87;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bum37g Órarend 2025</h1>
+    
+    <button onclick="loadJson()">Órarend betöltése</button>
+
+    <div id="orarend"></div>
+
+    <script>
+        function loadJson() {
+            fetch('orarendBum37g.json')
+                .then(response => response.json())
+                .then(data => displayOrarend(data))
+                .catch(error => console.error('Hiba történt a fájl betöltésekor:', error));
+        }
+
+        function displayOrarend(data) {
+            const orarendDiv = document.getElementById('orarend');
+            orarendDiv.innerHTML = '';
+
+            data.BUM37G_orarend.ora.forEach(ora => {
+                const oraDiv = document.createElement('div');
+                oraDiv.classList.add('orarend-item');
+                oraDiv.innerHTML = `
+                    <h3>Tárgy: ${ora.targy}</h3>
+                    <p><strong>Helyszín:</strong> ${ora.helyszin}</p>
+                    <p><strong>Oktató:</strong> ${ora.oktato}</p>
+                    <p><strong>Szak:</strong> ${ora.szak}</p>
+                    <p><strong>Időpont:</strong> ${ora.idopont.nap}, ${ora.idopont.tol}-${ora.idopont.ig} óra</p>
+                `;
+                orarendDiv.appendChild(oraDiv);
+            });
+        }
+    </script>
+</body>
+</html>
