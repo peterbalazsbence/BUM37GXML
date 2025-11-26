@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #1e1e1e;
+    color: #e8e8e8;
+}
+
+header {
+    padding: 15px 0;
+    text-align: center;
+}
+
+
+header h1 {
+    font-size: 28px;
+    margin: 10px 0;
+    padding: 0;
+    font-weight: 700;
+}
+
+
+nav a {
+    color: #9ac3ff;
+    margin: 0 12px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #111;
+    border-top: 1px solid #333;
+    color: #777;
+}
+
+#terkep {
+    width: 100%;
+    height: 600px;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    margin: 0;
+    padding: 0;
+}
+.leaflet-marker-icon {
+    animation: bounceIn 0.4s ease;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0) translateY(-20px);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.1) translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.leaflet-popup {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.leaflet-popup.leaflet-popup-open {
+    opacity: 1;
+}
+/* urlap*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"] {
+    padding: 10px;
+    border: 1px solid #444;
+    background: #363636;
+    color: #e8e8e8;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #4da3ff;
+}
+
+.radioBox {
+    display: flex;
+    gap: 10px;
+    margin: 5px 0 10px 0;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px;
+    background: #4da3ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #6bb4ff;
+}
+
+.hiba {
+    color: #ff5757;
+    font-size: 13px;
+    height: 14px;
+}
+
+.hibasMezo {
+    border-color: #ff5757 !important;
+    animation: shake 0.2s;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0px); }
+    25% { transform: translateX(-4px); }
+    50% { transform: translateX(4px); }
+    75% { transform: translateX(-4px); }
+    100% { transform: translateX(0px); }
+}
+
+#sikerUzenet {
+    margin-top: 20px;
+    padding: 15px;
+    background: #2e7d32;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    display: none;
+    animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+aside {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #252525;
+    border-radius: 8px;
+    font-size: 14px;
+}
+.kartya {
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.kartya.kijelolt {
+    border-color: #ff3b3b !important;
+    background-color: rgba(255, 59, 59, 0.12) !important;
+    box-shadow: 0 0 10px rgba(255, 59, 59, 0.4) !important;
+}

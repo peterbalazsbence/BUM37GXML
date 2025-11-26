@@ -1,0 +1,333 @@
+{
+  "latnivalok": [
+    {
+      "nev": "Tihanyi Apátság",
+      "varos": "Tihany",
+      "lat": 46.9131,
+      "lng": 17.8863,
+      "kep": "images/tihany.jpg"
+    },
+    {
+      "nev": "Pannonhalmi Főapátság",
+      "varos": "Pannonhalma",
+      "lat": 47.5520,
+      "lng": 17.7580,
+      "kep": "images/pannonhalma.jpg"
+    },
+    {
+      "nev": "Halászbástya",
+      "varos": "Budapest",
+      "lat": 47.5020,
+      "lng": 19.0349,
+      "kep": "images/halaszbastya.jpg"
+    },
+    {
+      "nev": "Parlament",
+      "varos": "Budapest",
+      "lat": 47.5076,
+      "lng": 19.0452,
+      "kep": "images/parlament.jpg"
+    },
+    {
+      "nev": "Buda Várnegyed",
+      "varos": "Budapest",
+      "lat": 47.4952,
+      "lng": 19.0399,
+      "kep": "images/budavar.jpg"
+    },
+    {
+      "nev": "Hősök tere",
+      "varos": "Budapest",
+      "lat": 47.5145,
+      "lng": 19.0779,
+      "kep": "images/hosoktere.jpg"
+    },
+    {
+      "nev": "Szegedi Dóm",
+      "varos": "Szeged",
+      "lat": 46.2480,
+      "lng": 20.1482,
+      "kep": "images/szegedidom.jpg"
+    },
+    {
+      "nev": "Lillafüredi Palotaszálló",
+      "varos": "Lillafüred",
+      "lat": 48.1011,
+      "lng": 20.6496,
+      "kep": "images/lillafured.jpg"
+    },
+    {
+      "nev": "Aggteleki Cseppkőbarlang",
+      "varos": "Aggtelek",
+      "lat": 48.4663,
+      "lng": 20.5014,
+      "kep": "images/aggtelek.jpg"
+    },
+    {
+      "nev": "Esztergomi Bazilika",
+      "varos": "Esztergom",
+      "lat": 47.8038,
+      "lng": 18.7401,
+      "kep": "images/esztergom.jpg"
+    },
+    {
+      "nev": "Visegrádi Fellegvár",
+      "varos": "Visegrád",
+      "lat": 47.7856,
+      "lng": 18.9728,
+      "kep": "images/visegrad.jpg"
+    },
+    {
+      "nev": "Soproni Tűztorony",
+      "varos": "Sopron",
+      "lat": 47.6860,
+      "lng": 16.5890,
+      "kep": "images/sopron.jpg"
+    },
+    {
+      "nev": "Tapolcai Tavasbarlang",
+      "varos": "Tapolca",
+      "lat": 46.8803,
+      "lng": 17.4416,
+      "kep": "images/tapolca.jpg"
+    },
+    {
+      "nev": "Hollókő Ófalu",
+      "varos": "Hollókő",
+      "lat": 47.9964,
+      "lng": 19.6003,
+      "kep": "images/holloko.jpg"
+    },
+    {
+      "nev": "Bükki Nemzeti Park",
+      "varos": "Eger környéke",
+      "lat": 48.0700,
+      "lng": 20.4500,
+      "kep": "images/bukk.jpg"
+    },
+    {
+      "nev": "Nyíregyházi Állatpark",
+      "varos": "Nyíregyháza",
+      "lat": 47.9800,
+      "lng": 21.7200,
+      "kep": "images/nyiregyhaza_zoo.jpg"
+    },
+    {
+      "nev": "Hévízi-tó",
+      "varos": "Hévíz",
+      "lat": 46.7880,
+      "lng": 17.1847,
+      "kep": "images/heviz.jpg"
+    },
+    {
+      "nev": "Szigetvári Vár",
+      "varos": "Szigetvár",
+      "lat": 46.0480,
+      "lng": 17.8030,
+      "kep": "images/szigetvar.jpg"
+    },
+    {
+      "nev": "Fertőrákosi Barlangszínház",
+      "varos": "Fertőrákos",
+      "lat": 47.7344,
+      "lng": 16.6509,
+      "kep": "images/fertorakos.jpg"
+    },
+    {
+      "nev": "Tatai Öreg-tó",
+      "varos": "Tata",
+      "lat": 47.6482,
+      "lng": 18.3183,
+      "kep": "images/tata.jpg"
+    },
+    {
+      "nev": "Siroki Vár",
+      "varos": "Sirok",
+      "lat": 47.9334,
+      "lng": 20.2021,
+      "kep": "images/sirok.jpg"
+    },
+    {
+      "nev": "Egerszalóki Sódomb",
+      "varos": "Egerszalók",
+      "lat": 47.8739,
+      "lng": 20.3339,
+      "kep": "images/egerszalok.jpg"
+    },
+    {
+      "nev": "Fátyol-vízesés",
+      "varos": "Szilvásvárad",
+      "lat": 48.1045,
+      "lng": 20.3922,
+      "kep": "images/fatyol.jpg"
+    },
+    {
+      "nev": "Debreceni Nagytemplom",
+      "varos": "Debrecen",
+      "lat": 47.5316,
+      "lng": 21.6240,
+      "kep": "images/debrecen.jpg"
+    },
+    {
+      "nev": "Gyulai Vár",
+      "varos": "Gyula",
+      "lat": 46.6480,
+      "lng": 21.2780,
+      "kep": "images/gyula.jpg"
+    },
+    {
+      "nev": "Veszprémi Állatkert",
+      "varos": "Veszprém",
+      "lat": 47.1014,
+      "lng": 17.9030,
+      "kep": "images/veszprem_zoo.jpg"
+    },
+    {
+      "nev": "Zempléni Kalandpark",
+      "varos": "Sátoraljaújhely",
+      "lat": 48.3950,
+      "lng": 21.6610,
+      "kep": "images/zemplen.jpg"
+    },
+    {
+      "nev": "Kékestető",
+      "varos": "Mátraháza",
+      "lat": 47.8727,
+      "lng": 20.0080,
+      "kep": "images/kekesteto.jpg"
+    },
+    {
+      "nev": "Balatonfüredi Tagore sétány",
+      "varos": "Balatonfüred",
+      "lat": 46.9591,
+      "lng": 17.8857,
+      "kep": "images/tagore.jpg"
+    },
+    {
+      "nev": "Badacsonyi kilátó",
+      "varos": "Badacsony",
+      "lat": 46.8001,
+      "lng": 17.5131,
+      "kep": "images/badacsony.jpg"
+    },
+    {
+      "nev": "Zalakarosi Fürdő",
+      "varos": "Zalakaros",
+      "lat": 46.5512,
+      "lng": 17.1277,
+      "kep": "images/zalakaros.jpg"
+    },
+    {
+      "nev": "Kalocsa Érseki Palota",
+      "varos": "Kalocsa",
+      "lat": 46.5262,
+      "lng": 18.9862,
+      "kep": "images/kalocsa.jpg"
+    },
+    {
+      "nev": "Pécsi Dóm",
+      "varos": "Pécs",
+      "lat": 46.0767,
+      "lng": 18.2280,
+      "kep": "images/pecs_dom.jpg"
+    },
+    {
+      "nev": "Miskolctapolcai Barlangfürdő",
+      "varos": "Miskolctapolca",
+      "lat": 48.0724,
+      "lng": 20.7644,
+      "kep": "images/tapolca_furdo.jpg"
+    },
+    {
+      "nev": "Hortobágyi Kilenclyukú híd",
+      "varos": "Hortobágy",
+      "lat": 47.5800,
+      "lng": 21.1660,
+      "kep": "images/hortobagy.jpg"
+    },
+    {
+      "nev": "Szentendrei Skanzen",
+      "varos": "Szentendre",
+      "lat": 47.6642,
+      "lng": 19.0356,
+      "kep": "images/szentendre.jpg"
+    },
+    {
+      "nev": "Károlyi-kastély",
+      "varos": "Füzérradvány",
+      "lat": 48.4360,
+      "lng": 21.5420,
+      "kep": "images/fuzerradvany.jpg"
+    },
+    {
+      "nev": "Füzéri Vár",
+      "varos": "Füzér",
+      "lat": 48.4640,
+      "lng": 21.4580,
+      "kep": "images/fuzer.jpg"
+    },
+    {
+      "nev": "Keszthelyi Festetics-kastély",
+      "varos": "Keszthely",
+      "lat": 46.7680,
+      "lng": 17.2430,
+      "kep": "images/keszthely.jpg"
+    },
+    {
+      "nev": "Bory-vár",
+      "varos": "Székesfehérvár",
+      "lat": 47.2050,
+      "lng": 18.4080,
+      "kep": "images/boryvar.jpg"
+    },
+    {
+      "nev": "Diósgyőri Vár",
+      "varos": "Miskolc",
+      "lat": 48.1070,
+      "lng": 20.7080,
+      "kep": "images/diosgyor.jpg"
+    },
+    {
+      "nev": "Tokaji borvidék",
+      "varos": "Tokaj",
+      "lat": 48.1160,
+      "lng": 21.4080,
+      "kep": "images/tokaj.jpg"
+    },
+    {
+      "nev": "Szegedi Füvészkert",
+      "varos": "Szeged",
+      "lat": 46.2380,
+      "lng": 20.1160,
+      "kep": "images/szeged_fuveszkert.jpg"
+    },
+    {
+      "nev": "Pannonhalmi Arborétum",
+      "varos": "Pannonhalma",
+      "lat": 47.5525,
+      "lng": 17.7550,
+      "kep": "images/pannonhalma_arboretum.jpg"
+    },
+    {
+      "nev": "Gödöllői Királyi Kastély",
+      "varos": "Gödöllő",
+      "lat": 47.5965,
+      "lng": 19.3569,
+      "kep": "images/godollo.jpg"
+    },
+    {
+      "nev": "Várkert Bazár",
+      "varos": "Budapest",
+      "lat": 47.4951,
+      "lng": 19.0413,
+      "kep": "images/varkert.jpg"
+    },
+    {
+      "nev": "Zsolnay Negyed",
+      "varos": "Pécs",
+      "lat": 46.0760,
+      "lng": 18.2330,
+      "kep": "images/zsolnay.jpg"
+    }
+  ]
+}

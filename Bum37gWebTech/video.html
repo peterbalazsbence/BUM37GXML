@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videó</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        #videoContainer {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #2a2a2a;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #444;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .videoControls {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .videoControls button {
+            padding: 12px 18px;
+            border: none;
+            border-radius: 6px;
+            background: #4da3ff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .videoControls button:hover {
+            background: #6bb4ff;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+
+<header>
+    <h1>Videó – Magyarország bemutatása</h1>
+    <nav>
+        <a href="index.html">Főoldal</a>
+        <a href="latnivalok.html">Térkép</a>
+        <a href="latnivalok-lista.html">Lista</a>
+        <a href="video.html">Videó</a>
+        <a href="kapcsolat.html">Kapcsolat</a>
+
+    </nav>
+</header>
+
+<main>
+    <div id="videoContainer">
+        <video id="myVideo">
+            <source src="video/turizmus.mp4" type="video/mp4">
+            A böngésződ nem támogatja a videó lejátszást.
+        </video>
+
+        <div class="videoControls">
+            <button id="playBtn">Lejátszás</button>
+            <button id="pauseBtn">Szünet</button>
+            <button id="back10">⏪ -10s</button>
+            <button id="forward10">⏩ +10s</button>
+            <button id="muteBtn">🔇 Némitás</button>
+            <button id="volUp">🔊 Hang +</button>
+            <button id="volDown">🔉 Hang -</button>
+            <button id="speedUp">⏫ Gyorsabban</button>
+            <button id="speedDown">⏬ Lassabban</button>
+        </div>
+    </div>
+</main>
+
+<script src="js/video.js"></script>
+
+</body>
+</html>

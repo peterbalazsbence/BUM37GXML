@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Látványosságok – Lista</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #444;
+        }
+        th {
+            background: #333;
+            color: #9ac3ff;
+        }
+        tr:nth-child(even) {
+            background: #222;
+        }
+
+        .gridContainer {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .kartya {
+            background: #2a2a2a;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #444;
+            transition: 0.2s;
+        }
+
+        .kartya:hover {
+            transform: scale(1.03);
+            border-color: #4da3ff;
+        }
+        .kartya.kijelolt {
+            border-color: #003cff;
+            background-color: rgba(10, 145, 199, 0.459);
+            box-shadow: 0 0 12px rgba(17, 21, 247, 0.452);
+        }
+        .kartya img {
+            width: 100%;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+
+        #ujElemBtn, #modositBtn {
+            margin-top: 25px;
+            padding: 12px;
+            background: #4da3ff;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+        }
+        #ujElemBtn:hover, #modositBtn:hover {
+            background: #6bb4ff;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+
+<header>
+    <h1>Látványosságok Listája</h1>
+    <nav>
+        <a href="index.html">Főoldal</a>
+        <a href="latnivalok.html">Térkép</a>
+        <a href="latnivalok-lista.html">Lista</a>
+        <a href="video.html">Videó</a>
+        <a href="kapcsolat.html">Kapcsolat</a>
+    </nav>
+</header>
+
+<main>
+    <h2>Táblázatban:</h2>
+
+    <table id="latTabla">
+        <thead>
+            <tr>
+                <th>Név</th>
+                <th>Város</th>
+                <th>Koordináták</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- ide tölti be JS -->
+        </tbody>
+    </table>
+
+
+    <h2>Kártyákban:</h2>
+    <button id="ujElemBtn">Új látványosság hozzáadása</button>
+    <button id="modositBtn">Kijelölt elem módosítása</button>
+
+    <div class="gridContainer" id="grid">
+        <!-- ide is tölti be JS -->
+    </div>
+
+</main>
+
+<script src="js/lista.js"></script>
+
+</body>
+</html>
