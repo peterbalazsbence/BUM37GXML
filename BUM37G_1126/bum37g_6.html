@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery feladat - Számológép</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="bum37g_6.js"></script>
+
+    <style>
+        body {
+            margin: 30px;
+            font-family: Arial, sans-serif;
+        }
+        #keret {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #999;
+            background: #f0f4ff;
+        }
+        input[type=text] {
+            width: 80px;
+            margin-bottom: 8px;
+        }
+        #eredmeny {
+            font-weight: bold;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>jQuery feladat</h2>
+
+<div id="keret">
+
+    <p>Adjon meg két egész számot!</p>
+
+    A = <input type="text" id="a"><br>
+    B = <input type="text" id="b"><br><br>
+
+    <label><input type="radio" name="muvelet" value="szor"> A * B</label><br>
+    <label><input type="radio" name="muvelet" value="oszt"> A / B</label><br>
+    <label><input type="radio" name="muvelet" value="osszead"> A + B</label><br>
+    <label><input type="radio" name="muvelet" value="kivon"> A - B</label><br><br>
+
+    <button id="szamol">Számol</button>
+
+    <p>Eredmény: <span id="eredmeny"></span></p>
+
+</div>
+
+</body>
+</html>

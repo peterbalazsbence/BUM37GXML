@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Feladat</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="4.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        #urlap {
+            width: 300px;
+            padding: 15px;
+            background-color: #cfe2f3;
+            border: 2px solid #7a7a7a;
+            margin-top: 20px;
+        }
+        input[type=text] {
+            width: 95%;
+            margin-bottom: 10px;
+        }
+        .gombsor {
+            margin: 15px 0;
+        }
+        button {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>jQuery feladatok</h1>
+
+<p id="p1">Ez az első bekezdés.</p>
+<p id="p2">Ez a második bekezdés.</p>
+<p id="p3">Ez a harmadik bekezdés.</p>
+
+<div class="gombsor">
+    <button id="hideText">Elrejti</button>
+    <button id="showText">Megjeleníti</button>
+    <button id="toggleText">Elrejti/Megjeleníti</button>
+</div>
+
+<div id="urlap">
+    <h3>Űrlap</h3>
+
+    <label>Név:</label><br>
+    <input type="text" id="nev"><br>
+
+    <label>Email:</label><br>
+    <input type="text" id="email"><br>
+
+    <label>Jelszó:</label><br>
+    <input type="text" id="jelszo"><br>
+
+    <button id="submit">Jelentkezés</button>
+</div>
+
+<div class="gombsor">
+    <button id="op01">Áttetszőség=0.1</button>
+    <button id="op05">Áttetszőség=0.5</button>
+    <button id="op08">Áttetszőség=0.8</button>
+</div>
+
+<div class="gombsor">
+    <button id="formHide">Elrejti</button>
+    <button id="formShow">Megjeleníti</button>
+    <button id="formToggle">Elrejti/Megjeleníti</button>
+</div>
+
+</body>
+</html>
