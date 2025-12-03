@@ -1,0 +1,30 @@
+body {
+    font-family: Arial;
+}
+
+#terulet, #terulet2 {
+    background: #eef;
+    padding: 15px;
+    width: 350px;
+    margin-bottom: 20px;
+    min-height: 80px;
+}
+
+button {
+    padding: 8px 14px;
+    background: #5560ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3341ff;
+}
+
+.kartya {
+    padding: 10px;
+    background: #dde3ff;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,49 @@
+{
+    "BUM37G_orarend": {
+      "ora": [
+        {
+          "targy": "Elektrotechnika-elektronika",
+          "idopont": {
+            "nap": "hetfo",
+            "tol": 8,
+            "ig": 10
+          },
+          "helyszin": "E3",
+          "oktato": "Dr. Kovács János",
+          "szak": "Mérnökinformatikus"
+        },
+        {
+          "targy": "Web technológiák 1.",
+          "idopont": {
+            "nap": "hetfo",
+            "tol": 10,
+            "ig": 12
+          },
+          "helyszin": "E3",
+          "oktato": "Dr. Kovács János",
+          "szak": "Mérnökinformatikus"
+        },
+        {
+          "targy": "Mobil programozási alapok",
+          "idopont": {
+            "nap": "hetfo",
+            "tol": 16,
+            "ig": 18
+          },
+          "helyszin": "B2-105",
+          "oktato": "Nagy Péter",
+          "szak": "Mérnökinformatikus"
+        },
+        {
+          "targy": "Mobil programozási alapok",
+          "idopont": {
+            "nap": "hetfo",
+            "tol": 18,
+            "ig": 20
+          }
+        }
+      ]
+    }
+  }
+  
+  
