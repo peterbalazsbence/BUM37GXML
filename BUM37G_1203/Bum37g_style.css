@@ -1,0 +1,27 @@
+body {
+    font-family: Arial;
+}
+
+#terulet {
+    width: 300px;
+    padding: 10px;
+    background: #c9d0f0;
+    margin-bottom: 10px;
+}
+
+#eredmeny {
+    width: 300px;
+    padding: 20px;
+    background: #e6e6f8;
+    float: right;
+    border-left: 4px solid #6b6bb8;
+}
+
+#eredmeny h2 {
+    margin-top: 0;
+    color: #33336b;
+}
+
+#eredmeny b {
+    color: #333;
+}
