@@ -47,7 +47,7 @@ footer {
     color: #777;
 }
 
-#terkep {
+#map {
     width: 100%;
     height: 600px;
     border-top: 2px solid #333;
@@ -129,13 +129,13 @@ button:hover {
     background: #6bb4ff;
 }
 
-.hiba {
+.error {
     color: #ff5757;
     font-size: 13px;
     height: 14px;
 }
 
-.hibasMezo {
+.faultyLine {
     border-color: #ff5757 !important;
     animation: shake 0.2s;
 }
@@ -148,7 +148,7 @@ button:hover {
     100% { transform: translateX(0px); }
 }
 
-#sikerUzenet {
+#successMsg {
     margin-top: 20px;
     padding: 15px;
     background: #2e7d32;
@@ -170,12 +170,12 @@ aside {
     border-radius: 8px;
     font-size: 14px;
 }
-.kartya {
+.card {
     border: 2px solid transparent;
     transition: all 0.2s ease;
 }
 
-.kartya.kijelolt {
+.card.selected {
     border-color: #ff3b3b !important;
     background-color: rgba(255, 59, 59, 0.12) !important;
     box-shadow: 0 0 10px rgba(255, 59, 59, 0.4) !important;

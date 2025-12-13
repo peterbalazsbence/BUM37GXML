@@ -32,7 +32,7 @@
             gap: 20px;
         }
 
-        .kartya {
+        .card {
             background: #2a2a2a;
             padding: 15px;
             border-radius: 8px;
@@ -40,22 +40,22 @@
             transition: 0.2s;
         }
 
-        .kartya:hover {
+        .card:hover {
             transform: scale(1.03);
             border-color: #4da3ff;
         }
-        .kartya.kijelolt {
+        .card.selected {
             border-color: #003cff;
             background-color: rgba(10, 145, 199, 0.459);
             box-shadow: 0 0 12px rgba(17, 21, 247, 0.452);
         }
-        .kartya img {
+        .card img {
             width: 100%;
             border-radius: 6px;
             margin-bottom: 10px;
         }
 
-        #ujElemBtn, #modositBtn {
+        #newcrdBtn, #modifyBtn {
             margin-top: 25px;
             padding: 12px;
             background: #4da3ff;
@@ -65,7 +65,7 @@
             font-size: 17px;
             cursor: pointer;
         }
-        #ujElemBtn:hover, #modositBtn:hover {
+        #newcrdBtn:hover, #modifyBtn:hover {
             background: #6bb4ff;
         }
     </style>
@@ -89,7 +89,7 @@
 <main>
     <h2>Táblázatban:</h2>
 
-    <table id="latTabla">
+    <table id="latTable">
         <thead>
             <tr>
                 <th>Név</th>
@@ -104,8 +104,8 @@
 
 
     <h2>Kártyákban:</h2>
-    <button id="ujElemBtn">Új látványosság hozzáadása</button>
-    <button id="modositBtn">Kijelölt elem módosítása</button>
+    <button id="newcrdBtn">Új látványosság hozzáadása</button>
+    <button id="modifyBtn">Kijelölt elem módosítása</button>
 
     <div class="gridContainer" id="grid">
         <!-- ide is tölti be JS -->

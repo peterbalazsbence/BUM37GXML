@@ -38,39 +38,39 @@
         <form id="contactForm" novalidate>
 
             <label>Név:</label>
-            <input type="text" id="nev">
-            <small class="hiba"></small>
+            <input type="text" id="name">
+            <small class="error"></small>
 
             <label>Email:</label>
             <input type="email" id="email">
-            <small class="hiba"></small>
+            <small class="error"></small>
 
             <label>Ajánlott látványosság neve:</label>
-            <input type="text" id="latvany">
-            <small class="hiba"></small>
+            <input type="text" id="sight">
+            <small class="error"></small>
 
             <label>Régió kiválasztása:</label>
-            <input list="regiok" id="regio">
-            <datalist id="regiok">
+            <input list="regions" id="region">
+            <datalist id="regions">
                 <option value="Dunántúl">
                 <option value="Dunatisza köze">
                 <option value="Északi-középhegység">
                 <option value="Alföld">
                 <option value="Budapest és környéke">
             </datalist>
-            <small class="hiba"></small>
+            <small class="error"></small>
 
             <label>Dátum amikor ott jártál:</label>
-            <input type="date" id="datum">
-            <small class="hiba"></small>
+            <input type="date" id="date">
+            <small class="error"></small>
 
             <label>Rövid leírás:</label>
-            <textarea id="uzenet" rows="4"></textarea>
-            <small class="hiba"></small>
+            <textarea id="msg" rows="4"></textarea>
+            <small class="error"></small>
 
             <label>Kedvenc színed ehhez a helyhez:</label>
             <input type="color" id="szin" value="#4da3ff">
-            <small class="hiba"></small>
+            <small class="error"></small>
 
             <label>Értékelés (1-5):</label>
             <div class="radioBox">
@@ -80,14 +80,14 @@
                 <label><input type="radio" name="rate" value="4">4</label>
                 <label><input type="radio" name="rate" value="5">5</label>
             </div>
-            <small class="hiba"></small>
+            <small class="error"></small>
 
             <label>
-                <input type="checkbox" id="aszf"> Elolvastam és elfogadom a feltételeket
+                <input type="checkbox" id="acceptCond"> Elolvastam és elfogadom a feltételeket
             </label>
-            <small class="hiba"></small>
+            <small class="error"></small>
 
-            <button type="submit" id="kuldesGomb">Küldés</button>
+            <button type="submit" id="sendButton">Küldés</button>
 
         </form>
     </article>
@@ -99,7 +99,7 @@
         </p>
     </aside>
 
-    <div id="sikerUzenet">Köszönjük a javaslatot!</div>
+    <div id="successMsg">Köszönjük a javaslatot!</div>
 </main>
 
 <script src="js/contact.js"></script>

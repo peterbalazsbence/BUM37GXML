@@ -1,80 +1,80 @@
 $(document).ready(function () {
 
-    let kijeloltKartya = null;
+    let selectedcard = null;
 
-    $.getJSON("data/latnivalok.json", function (adatok) {
+    $.getJSON("data/latnivalok.json", function (data) {
 
-        const tabla = $("#latTabla tbody");
+        const tabla = $("#latTable tbody");
         const grid = $("#grid");
 
-        adatok.latnivalok.forEach(hely => {
+        data.sights.forEach(place => {
 
-            const sor = `
+            const row = `
                 <tr>
-                    <td>${hely.nev}</td>
-                    <td>${hely.varos}</td>
-                    <td>${hely.lat}, ${hely.lng}</td>
+                    <td>${place.name}</td>
+                    <td>${place.city}</td>
+                    <td>${place.lat}, ${place.lng}</td>
                 </tr>
             `;
-            tabla.append(sor);
+            tabla.append(row);
 
-            const kepUrl = hely.kep ? hely.kep : "images/placeholder.jpg";
+            const imgUrl = place.img ? place.img : "images/placeholder.jpg";
 
-            const kartya = $(`
-                <div class="kartya">
-                    <img src="${kepUrl}" alt="${hely.nev}">
-                    <h3>${hely.nev}</h3>
-                    <p>${hely.varos}</p>
+            const card = $(`
+                <div class="card">
+                    <img src="${imgUrl}" alt="${place.name}">
+                    <h3>${place.name}</h3>
+                    <p>${place.city}</p>
                 </div>
             `);
 
-            grid.append(kartya);
+            grid.append(card);
         });
 
     }).fail(function () {
         console.error("Nem sikerült betölteni a data/latnivalok.json fájlt");
     });
 
-    $(document).on("click", ".kartya", function () {
-        $(".kartya").removeClass("kijelolt");
-        $(this).addClass("kijelolt");
-        kijeloltKartya = $(this);
+    $(document).on("click", ".card", function () {
+        $(".card").removeClass("selected");
+        $(this).addClass("selected");
+        selectedcard = $(this);
     });
 
-    $("#ujElemBtn").click(function () {
-        const cim = prompt("Mi legyen az új kártya címe?");
+    $("#newcrdBtn").click(function () {
+        const title = prompt("Mi legyen az új kártya címe?");
 
-        if (!cim || cim.trim() === "") {
+        if (!title || title.trim() === "") {
             alert("Nem adhatsz meg üres címet!");
             return;
         }
 
-        const ujKartya = $(`
-            <div class="kartya">
-                <h3>${cim.trim()}</h3>
+        const newcard = $(`
+            <div class="card">
+                <h3>${title.trim()}</h3>
                 <p>A te látványosságod.</p>
             </div>
         `);
 
-        $("#grid").prepend(ujKartya);
+        $("#grid").prepend(newcard);
     });
 
-    $("#modositBtn").click(function () {
+    $("#modifyBtn").click(function () {
 
-        if (!kijeloltKartya) {
+        if (!selectedcard) {
             alert("Előbb kattints egy kártyára, hogy kijelöld!");
             return;
         }
 
-        const jelenlegiCim = kijeloltKartya.find("h3").text();
-        const ujCim = prompt("Mi a látványosság neve?", jelenlegiCim);
+        const currentTitle = selectedcard.find("h3").text();
+        const newTitle = prompt("Mi a látványosság neve?", currentTitle);
 
-        if (!ujCim || ujCim.trim() === "") {
+        if (!newTitle || newTitle.trim() === "") {
             alert("Nem adhatsz meg üres nevet!");
             return;
         }
 
-        kijeloltKartya.find("h3").text(ujCim.trim());
+        selectedcard.find("h3").text(newTitle.trim());
     });
 
 });

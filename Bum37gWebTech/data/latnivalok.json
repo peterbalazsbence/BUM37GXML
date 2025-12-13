@@ -1,333 +1,333 @@
 {
-  "latnivalok": [
+  "sights": [
     {
-      "nev": "Tihanyi Apátság",
-      "varos": "Tihany",
+      "name": "Tihanyi Apátság",
+      "city": "Tihany",
       "lat": 46.9131,
       "lng": 17.8863,
-      "kep": "images/tihany.jpg"
+      "img": "images/tihany.jpg"
     },
     {
-      "nev": "Pannonhalmi Főapátság",
-      "varos": "Pannonhalma",
+      "name": "Pannonhalmi Főapátság",
+      "city": "Pannonhalma",
       "lat": 47.5520,
       "lng": 17.7580,
-      "kep": "images/pannonhalma.jpg"
+      "img": "images/pannonhalma.jpg"
     },
     {
-      "nev": "Halászbástya",
-      "varos": "Budapest",
+      "name": "Halászbástya",
+      "city": "Budapest",
       "lat": 47.5020,
       "lng": 19.0349,
-      "kep": "images/halaszbastya.jpg"
+      "img": "images/halaszbastya.jpg"
     },
     {
-      "nev": "Parlament",
-      "varos": "Budapest",
+      "name": "Parlament",
+      "city": "Budapest",
       "lat": 47.5076,
       "lng": 19.0452,
-      "kep": "images/parlament.jpg"
+      "img": "images/parlament.jpg"
     },
     {
-      "nev": "Buda Várnegyed",
-      "varos": "Budapest",
+      "name": "Buda Várnegyed",
+      "city": "Budapest",
       "lat": 47.4952,
       "lng": 19.0399,
-      "kep": "images/budavar.jpg"
+      "img": "images/budavar.jpg"
     },
     {
-      "nev": "Hősök tere",
-      "varos": "Budapest",
+      "name": "Hősök tere",
+      "city": "Budapest",
       "lat": 47.5145,
       "lng": 19.0779,
-      "kep": "images/hosoktere.jpg"
+      "img": "images/hosoktere.jpg"
     },
     {
-      "nev": "Szegedi Dóm",
-      "varos": "Szeged",
+      "name": "Szegedi Dóm",
+      "city": "Szeged",
       "lat": 46.2480,
       "lng": 20.1482,
-      "kep": "images/szegedidom.jpg"
+      "img": "images/szegedidom.jpg"
     },
     {
-      "nev": "Lillafüredi Palotaszálló",
-      "varos": "Lillafüred",
+      "name": "Lillafüredi Palotaszálló",
+      "city": "Lillafüred",
       "lat": 48.1011,
       "lng": 20.6496,
-      "kep": "images/lillafured.jpg"
+      "img": "images/lillafured.jpg"
     },
     {
-      "nev": "Aggteleki Cseppkőbarlang",
-      "varos": "Aggtelek",
+      "name": "Aggteleki Cseppkőbarlang",
+      "city": "Aggtelek",
       "lat": 48.4663,
       "lng": 20.5014,
-      "kep": "images/aggtelek.jpg"
+      "img": "images/aggtelek.jpg"
     },
     {
-      "nev": "Esztergomi Bazilika",
-      "varos": "Esztergom",
+      "name": "Esztergomi Bazilika",
+      "city": "Esztergom",
       "lat": 47.8038,
       "lng": 18.7401,
-      "kep": "images/esztergom.jpg"
+      "img": "images/esztergom.jpg"
     },
     {
-      "nev": "Visegrádi Fellegvár",
-      "varos": "Visegrád",
+      "name": "Visegrádi Fellegvár",
+      "city": "Visegrád",
       "lat": 47.7856,
       "lng": 18.9728,
-      "kep": "images/visegrad.jpg"
+      "img": "images/visegrad.jpg"
     },
     {
-      "nev": "Soproni Tűztorony",
-      "varos": "Sopron",
+      "name": "Soproni Tűztorony",
+      "city": "Sopron",
       "lat": 47.6860,
       "lng": 16.5890,
-      "kep": "images/sopron.jpg"
+      "img": "images/sopron.jpg"
     },
     {
-      "nev": "Tapolcai Tavasbarlang",
-      "varos": "Tapolca",
+      "name": "Tapolcai Tavasbarlang",
+      "city": "Tapolca",
       "lat": 46.8803,
       "lng": 17.4416,
-      "kep": "images/tapolca.jpg"
+      "img": "images/tapolca.jpg"
     },
     {
-      "nev": "Hollókő Ófalu",
-      "varos": "Hollókő",
+      "name": "Hollókő Ófalu",
+      "city": "Hollókő",
       "lat": 47.9964,
       "lng": 19.6003,
-      "kep": "images/holloko.jpg"
+      "img": "images/holloko.jpg"
     },
     {
-      "nev": "Bükki Nemzeti Park",
-      "varos": "Eger környéke",
+      "name": "Bükki Nemzeti Park",
+      "city": "Eger környéke",
       "lat": 48.0700,
       "lng": 20.4500,
-      "kep": "images/bukk.jpg"
+      "img": "images/bukk.jpg"
     },
     {
-      "nev": "Nyíregyházi Állatpark",
-      "varos": "Nyíregyháza",
+      "name": "Nyíregyházi Állatpark",
+      "city": "Nyíregyháza",
       "lat": 47.9800,
       "lng": 21.7200,
-      "kep": "images/nyiregyhaza_zoo.jpg"
+      "img": "images/nyiregyhaza_zoo.jpg"
     },
     {
-      "nev": "Hévízi-tó",
-      "varos": "Hévíz",
+      "name": "Hévízi-tó",
+      "city": "Hévíz",
       "lat": 46.7880,
       "lng": 17.1847,
-      "kep": "images/heviz.jpg"
+      "img": "images/heviz.jpg"
     },
     {
-      "nev": "Szigetvári Vár",
-      "varos": "Szigetvár",
+      "name": "Szigetvári Vár",
+      "city": "Szigetvár",
       "lat": 46.0480,
       "lng": 17.8030,
-      "kep": "images/szigetvar.jpg"
+      "img": "images/szigetvar.jpg"
     },
     {
-      "nev": "Fertőrákosi Barlangszínház",
-      "varos": "Fertőrákos",
+      "name": "Fertőrákosi Barlangszínház",
+      "city": "Fertőrákos",
       "lat": 47.7344,
       "lng": 16.6509,
-      "kep": "images/fertorakos.jpg"
+      "img": "images/fertorakos.jpg"
     },
     {
-      "nev": "Tatai Öreg-tó",
-      "varos": "Tata",
+      "name": "Tatai Öreg-tó",
+      "city": "Tata",
       "lat": 47.6482,
       "lng": 18.3183,
-      "kep": "images/tata.jpg"
+      "img": "images/tata.jpg"
     },
     {
-      "nev": "Siroki Vár",
-      "varos": "Sirok",
+      "name": "Siroki Vár",
+      "city": "Sirok",
       "lat": 47.9334,
       "lng": 20.2021,
-      "kep": "images/sirok.jpg"
+      "img": "images/sirok.jpg"
     },
     {
-      "nev": "Egerszalóki Sódomb",
-      "varos": "Egerszalók",
+      "name": "Egerszalóki Sódomb",
+      "city": "Egerszalók",
       "lat": 47.8739,
       "lng": 20.3339,
-      "kep": "images/egerszalok.jpg"
+      "img": "images/egerszalok.jpg"
     },
     {
-      "nev": "Fátyol-vízesés",
-      "varos": "Szilvásvárad",
+      "name": "Fátyol-vízesés",
+      "city": "Szilvásvárad",
       "lat": 48.1045,
       "lng": 20.3922,
-      "kep": "images/fatyol.jpg"
+      "img": "images/fatyol.jpg"
     },
     {
-      "nev": "Debreceni Nagytemplom",
-      "varos": "Debrecen",
+      "name": "Debreceni Nagytemplom",
+      "city": "Debrecen",
       "lat": 47.5316,
       "lng": 21.6240,
-      "kep": "images/debrecen.jpg"
+      "img": "images/debrecen.jpg"
     },
     {
-      "nev": "Gyulai Vár",
-      "varos": "Gyula",
+      "name": "Gyulai Vár",
+      "city": "Gyula",
       "lat": 46.6480,
       "lng": 21.2780,
-      "kep": "images/gyula.jpg"
+      "img": "images/gyula.jpg"
     },
     {
-      "nev": "Veszprémi Állatkert",
-      "varos": "Veszprém",
+      "name": "Veszprémi Állatkert",
+      "city": "Veszprém",
       "lat": 47.1014,
       "lng": 17.9030,
-      "kep": "images/veszprem_zoo.jpg"
+      "img": "images/veszprem_zoo.jpg"
     },
     {
-      "nev": "Zempléni Kalandpark",
-      "varos": "Sátoraljaújhely",
+      "name": "Zempléni Kalandpark",
+      "city": "Sátoraljaújhely",
       "lat": 48.3950,
       "lng": 21.6610,
-      "kep": "images/zemplen.jpg"
+      "img": "images/zemplen.jpg"
     },
     {
-      "nev": "Kékestető",
-      "varos": "Mátraháza",
+      "name": "Kékestető",
+      "city": "Mátraháza",
       "lat": 47.8727,
       "lng": 20.0080,
-      "kep": "images/kekesteto.jpg"
+      "img": "images/kekesteto.jpg"
     },
     {
-      "nev": "Balatonfüredi Tagore sétány",
-      "varos": "Balatonfüred",
+      "name": "Balatonfüredi Tagore sétány",
+      "city": "Balatonfüred",
       "lat": 46.9591,
       "lng": 17.8857,
-      "kep": "images/tagore.jpg"
+      "img": "images/tagore.jpg"
     },
     {
-      "nev": "Badacsonyi kilátó",
-      "varos": "Badacsony",
+      "name": "Badacsonyi kilátó",
+      "city": "Badacsony",
       "lat": 46.8001,
       "lng": 17.5131,
-      "kep": "images/badacsony.jpg"
+      "img": "images/badacsony.jpg"
     },
     {
-      "nev": "Zalakarosi Fürdő",
-      "varos": "Zalakaros",
+      "name": "Zalakarosi Fürdő",
+      "city": "Zalakaros",
       "lat": 46.5512,
       "lng": 17.1277,
-      "kep": "images/zalakaros.jpg"
+      "img": "images/zalakaros.jpg"
     },
     {
-      "nev": "Kalocsa Érseki Palota",
-      "varos": "Kalocsa",
+      "name": "Kalocsa Érseki Palota",
+      "city": "Kalocsa",
       "lat": 46.5262,
       "lng": 18.9862,
-      "kep": "images/kalocsa.jpg"
+      "img": "images/kalocsa.jpg"
     },
     {
-      "nev": "Pécsi Dóm",
-      "varos": "Pécs",
+      "name": "Pécsi Dóm",
+      "city": "Pécs",
       "lat": 46.0767,
       "lng": 18.2280,
-      "kep": "images/pecs_dom.jpg"
+      "img": "images/pecs_dom.jpg"
     },
     {
-      "nev": "Miskolctapolcai Barlangfürdő",
-      "varos": "Miskolctapolca",
+      "name": "Miskolctapolcai Barlangfürdő",
+      "city": "Miskolctapolca",
       "lat": 48.0724,
       "lng": 20.7644,
-      "kep": "images/tapolca_furdo.jpg"
+      "img": "images/tapolca_furdo.jpg"
     },
     {
-      "nev": "Hortobágyi Kilenclyukú híd",
-      "varos": "Hortobágy",
+      "name": "Hortobágyi Kilenclyukú híd",
+      "city": "Hortobágy",
       "lat": 47.5800,
       "lng": 21.1660,
-      "kep": "images/hortobagy.jpg"
+      "img": "images/hortobagy.jpg"
     },
     {
-      "nev": "Szentendrei Skanzen",
-      "varos": "Szentendre",
+      "name": "Szentendrei Skanzen",
+      "city": "Szentendre",
       "lat": 47.6642,
       "lng": 19.0356,
-      "kep": "images/szentendre.jpg"
+      "img": "images/szentendre.jpg"
     },
     {
-      "nev": "Károlyi-kastély",
-      "varos": "Füzérradvány",
+      "name": "Károlyi-kastély",
+      "city": "Füzérradvány",
       "lat": 48.4360,
       "lng": 21.5420,
-      "kep": "images/fuzerradvany.jpg"
+      "img": "images/fuzerradvany.jpg"
     },
     {
-      "nev": "Füzéri Vár",
-      "varos": "Füzér",
+      "name": "Füzéri Vár",
+      "city": "Füzér",
       "lat": 48.4640,
       "lng": 21.4580,
-      "kep": "images/fuzer.jpg"
+      "img": "images/fuzer.jpg"
     },
     {
-      "nev": "Keszthelyi Festetics-kastély",
-      "varos": "Keszthely",
+      "name": "Keszthelyi Festetics-kastély",
+      "city": "Keszthely",
       "lat": 46.7680,
       "lng": 17.2430,
-      "kep": "images/keszthely.jpg"
+      "img": "images/keszthely.jpg"
     },
     {
-      "nev": "Bory-vár",
-      "varos": "Székesfehérvár",
+      "name": "Bory-vár",
+      "city": "Székesfehérvár",
       "lat": 47.2050,
       "lng": 18.4080,
-      "kep": "images/boryvar.jpg"
+      "img": "images/boryvar.jpg"
     },
     {
-      "nev": "Diósgyőri Vár",
-      "varos": "Miskolc",
+      "name": "Diósgyőri Vár",
+      "city": "Miskolc",
       "lat": 48.1070,
       "lng": 20.7080,
-      "kep": "images/diosgyor.jpg"
+      "img": "images/diosgyor.jpg"
     },
     {
-      "nev": "Tokaji borvidék",
-      "varos": "Tokaj",
+      "name": "Tokaji borvidék",
+      "city": "Tokaj",
       "lat": 48.1160,
       "lng": 21.4080,
-      "kep": "images/tokaj.jpg"
+      "img": "images/tokaj.jpg"
     },
     {
-      "nev": "Szegedi Füvészkert",
-      "varos": "Szeged",
+      "name": "Szegedi Füvészkert",
+      "city": "Szeged",
       "lat": 46.2380,
       "lng": 20.1160,
-      "kep": "images/szeged_fuveszkert.jpg"
+      "img": "images/szeged_fuveszkert.jpg"
     },
     {
-      "nev": "Pannonhalmi Arborétum",
-      "varos": "Pannonhalma",
+      "name": "Pannonhalmi Arborétum",
+      "city": "Pannonhalma",
       "lat": 47.5525,
       "lng": 17.7550,
-      "kep": "images/pannonhalma_arboretum.jpg"
+      "img": "images/pannonhalma_arboretum.jpg"
     },
     {
-      "nev": "Gödöllői Királyi Kastély",
-      "varos": "Gödöllő",
+      "name": "Gödöllői Királyi Kastély",
+      "city": "Gödöllő",
       "lat": 47.5965,
       "lng": 19.3569,
-      "kep": "images/godollo.jpg"
+      "img": "images/godollo.jpg"
     },
     {
-      "nev": "Várkert Bazár",
-      "varos": "Budapest",
+      "name": "Várkert Bazár",
+      "city": "Budapest",
       "lat": 47.4951,
       "lng": 19.0413,
-      "kep": "images/varkert.jpg"
+      "img": "images/varkert.jpg"
     },
     {
-      "nev": "Zsolnay Negyed",
-      "varos": "Pécs",
+      "name": "Zsolnay Negyed",
+      "city": "Pécs",
       "lat": 46.0760,
       "lng": 18.2330,
-      "kep": "images/zsolnay.jpg"
+      "img": "images/zsolnay.jpg"
     }
   ]
 }

@@ -3,72 +3,72 @@ $(document).ready(function () {
     $("#contactForm").on("submit", function (e) {
         e.preventDefault();
 
-        let hiba = false;
+        let error = false;
 
-        const nev = $("#nev");
+        const name = $("#name");
         const email = $("#email");
-        const latvany = $("#latvany");
-        const regio = $("#regio");
-        const datum = $("#datum");
-        const uzenet = $("#uzenet");
+        const sight = $("#sight");
+        const region = $("#region");
+        const date = $("#date");
+        const msg = $("#msg");
         const rate = $("input[name='rate']:checked");
-        const aszf = $("#aszf");
+        const acceptCond = $("#acceptCond");
 
-        $("small.hiba").text("");
-        $("input, textarea, .radioBox, #aszf").removeClass("hibasMezo");
+        $("small.error").text("");
+        $("input, textarea, .radioBox, #acceptCond").removeClass("faultyLine");
 
-        if (nev.val().trim() === "") {
-            nev.addClass("hibasMezo");
-            nev.next(".hiba").text("Add meg a neved!");
-            hiba = true;
+        if (name.val().trim() === "") {
+            name.addClass("faultyLine");
+            name.next(".error").text("Add meg a neved!");
+            error = true;
         }
 
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email.val().trim())) {
-            email.addClass("hibasMezo");
-            email.next(".hiba").text("Érvénytelen email cím!");
-            hiba = true;
+            email.addClass("faultyLine");
+            email.next(".error").text("Érvénytelen email cím!");
+            error = true;
         }
 
-        if (latvany.val().trim() === "") {
-            latvany.addClass("hibasMezo");
-            latvany.next(".hiba").text("Add meg a látványosság nevét!");
-            hiba = true;
+        if (sight.val().trim() === "") {
+            sight.addClass("faultyLine");
+            sight.next(".error").text("Add meg a látványosság nevét!");
+            error = true;
         }
 
-        if (regio.val().trim() === "") {
-            regio.addClass("hibasMezo");
-            regio.next(".hiba").text("Válaszd ki vagy írd be a régiót!");
-            hiba = true;
+        if (region.val().trim() === "") {
+            region.addClass("faultyLine");
+            region.next(".error").text("Válaszd ki vagy írd be a régiót!");
+            error = true;
         }
 
-        if (datum.val().trim() === "") {
-            datum.addClass("hibasMezo");
-            datum.next(".hiba").text("Add meg a dátumot!");
-            hiba = true;
+        if (date.val().trim() === "") {
+            date.addClass("faultyLine");
+            date.next(".error").text("Add meg a dátumot!");
+            error = true;
         }
 
-        if (uzenet.val().trim() !== "" && uzenet.val().trim().length < 5) {
-            uzenet.addClass("hibasMezo");
-            uzenet.next(".hiba").text("Ha írsz leírást, legyen legalább 5 karakter.");
-            hiba = true;
+        if (msg.val().trim() !== "" && msg.val().trim().length < 5) {
+            msg.addClass("faultyLine");
+            msg.next(".error").text("Ha írsz leírást, legyen legalább 5 karakter.");
+            error = true;
         }
 
         if (rate.length === 0) {
-            $(".radioBox").addClass("hibasMezo");
-            $(".radioBox").next(".hiba").text("Válassz értékelést!");
-            hiba = true;
+            $(".radioBox").addClass("faultyLine");
+            $(".radioBox").next(".error").text("Válassz értékelést!");
+            error = true;
         }
 
-        if (!aszf.is(":checked")) {
-            aszf.addClass("hibasMezo");
-            aszf.next(".hiba").text("El kell fogadnod!");
-            hiba = true;
+        if (!acceptCond.is(":checked")) {
+            acceptCond.addClass("faultyLine");
+            acceptCond.next(".error").text("El kell fogadnod!");
+            error = true;
         }
 
-        if (hiba) return;
+        if (error) return;
 
-        $("#sikerUzenet").fadeIn(300);
+        $("#successMsg").fadeIn(300);
         $("#contactForm")[0].reset();
     });
 

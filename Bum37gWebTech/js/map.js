@@ -1,5 +1,5 @@
 
-const map = L.map('terkep').setView([47.1625, 19.5033], 7);
+const map = L.map('map').setView([47.1625, 19.5033], 7);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 18,
@@ -13,16 +13,16 @@ const blueIcon = L.icon({
     popupAnchor: [0, -32]
 });
 
-$.getJSON('data/latnivalok.json', function(adatok) {
+$.getJSON('data/latnivalok.json', function(data) {
 
-    adatok.latnivalok.forEach(hely => {
+    data.sights.forEach(place => {
 
-        const marker = L.marker([hely.lat, hely.lng], { icon: blueIcon }).addTo(map);
+        const marker = L.marker([place.lat, place.lng], { icon: blueIcon }).addTo(map);
 
         const popupHtml = `
-            <strong style="font-size:18px;">${hely.nev}</strong><br>
-            <span style="font-size:14px;">${hely.varos}</span><br><br>
-            <img src="${hely.kep}" width="200" style="border-radius:6px;">
+            <strong style="font-size:18px;">${place.name}</strong><br>
+            <span style="font-size:14px;">${place.varos}</span><br><br>
+            <img src="${place.kep}" width="200" style="border-radius:6px;">
         `;
 
         marker.bindPopup(popupHtml);
@@ -33,7 +33,7 @@ $.getJSON('data/latnivalok.json', function(adatok) {
         });
 
         marker.on("click", function() {
-            map.flyTo([hely.lat, hely.lng], 12, {
+            map.flyTo([place.lat, place.lng], 12, {
                 duration: 0.6
             });
         });
