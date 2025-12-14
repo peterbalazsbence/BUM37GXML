@@ -6,17 +6,10 @@
     <title>Magyarország Látványosságai</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <style>
-    .highlightedtext {
-        font-style: italic;
-        color: #9ac3ff;
-        padding-left: 5%;
-        text-align: center;
-    }
-    </style>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
 
 <header>
@@ -30,23 +23,29 @@
     </nav>
 </header>
 
-
 <main>
+
     <section>
         <h2>Üdvözöllek a weboldalon!</h2>
         <p>
-            Itt megtekintheted Magyarország néhány látnivalóját, térkép vagy akár lista formájában is. Javaslat esetén a Kapcsolat menüpontban lehet ajánlani.
+            Itt megtekintheted Magyarország néhány látnivalóját, térkép vagy akár lista formájában is.
         </p>
     </section>
-</main>
-<p class="highlightedtext">
-    Jó szórakozást!
-</p>
+    <br>
+    <br>
+    <section>
+        <h2>Kiemelt látványosság</h2>
+        <div id="featuredContainer"></div>
+        <button id="randomBtn">Véletlen látványosság megjelenítése térképen</button>
+    </section>
 
+</main>
 
 <footer>
     <p>© 2025 WebTech1 projekt – Készítette: <span>Péter Balázs</span></p>
 </footer>
+
+<script src="js/index.js"></script>
 
 </body>
 </html>

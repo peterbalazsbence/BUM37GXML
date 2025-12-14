@@ -1,44 +1,83 @@
 $(document).ready(function () {
 
-    let selectedcard = null;
+    let selectedCard = null;
+    let allSights = [];
 
     $.getJSON("data/latnivalok.json", function (data) {
 
-        const tabla = $("#latTable tbody");
-        const grid = $("#grid");
+        allSights = data.sights;
 
-        data.sights.forEach(place => {
-
-            const row = `
-                <tr>
-                    <td>${place.name}</td>
-                    <td>${place.city}</td>
-                    <td>${place.lat}, ${place.lng}</td>
-                </tr>
-            `;
-            tabla.append(row);
-
-            const imgUrl = place.img ? place.img : "images/placeholder.jpg";
-
-            const card = $(`
-                <div class="card">
-                    <img src="${imgUrl}" alt="${place.name}">
-                    <h3>${place.name}</h3>
-                    <p>${place.city}</p>
-                </div>
-            `);
-
-            grid.append(card);
-        });
+        renderData(allSights);
 
     }).fail(function () {
         console.error("Nem sikerült betölteni a data/latnivalok.json fájlt");
     });
 
+    function renderData(sights) {
+
+        const tableBody = $("#latTable tbody");
+        const grid = $("#grid");
+
+        tableBody.empty();
+        grid.empty();
+
+        sights.forEach(sight => {
+
+            const row = `
+                <tr>
+                    <td>${sight.name}</td>
+                    <td>${sight.city}</td>
+                    <td>${sight.lat}, ${sight.lng}</td>
+                </tr>
+            `;
+            tableBody.append(row);
+
+            const imgUrl = sight.img ? sight.img : "images/placeholder.jpg";
+
+            const card = $(`
+                <div class="card"
+                     data-lat="${sight.lat}"
+                     data-lng="${sight.lng}"
+                     data-name="${sight.name}">
+                    <img src="${imgUrl}" alt="${sight.name}">
+                    <h3>${sight.name}</h3>
+                    <p>${sight.city}</p>
+                    <button class="showOnMapBtn">Térképen</button>
+                </div>
+            `);
+
+            grid.append(card);
+        });
+    }
+
+    $("#searchInput").on("input", function () {
+
+        const query = $(this).val().toLowerCase();
+
+        const filteredSights = allSights.filter(sight =>
+            sight.name.toLowerCase().includes(query) ||
+            sight.city.toLowerCase().includes(query)
+        );
+
+        renderData(filteredSights);
+    });
+
     $(document).on("click", ".card", function () {
         $(".card").removeClass("selected");
         $(this).addClass("selected");
-        selectedcard = $(this);
+        selectedCard = $(this);
+    });
+
+    $(document).on("click", ".showOnMapBtn", function (e) {
+        e.stopPropagation();
+
+        const card = $(this).closest(".card");
+
+        const lat = card.data("lat");
+        const lng = card.data("lng");
+        const name = card.data("name");
+
+        window.location.href = `latnivalok.html?lat=${lat}&lng=${lng}&name=${encodeURIComponent(name)}`;
     });
 
     $("#newcrdBtn").click(function () {
@@ -49,24 +88,24 @@ $(document).ready(function () {
             return;
         }
 
-        const newcard = $(`
+        const newCard = $(`
             <div class="card">
                 <h3>${title.trim()}</h3>
                 <p>A te látványosságod.</p>
             </div>
         `);
 
-        $("#grid").prepend(newcard);
+        $("#grid").prepend(newCard);
     });
 
     $("#modifyBtn").click(function () {
 
-        if (!selectedcard) {
+        if (!selectedCard) {
             alert("Előbb kattints egy kártyára, hogy kijelöld!");
             return;
         }
 
-        const currentTitle = selectedcard.find("h3").text();
+        const currentTitle = selectedCard.find("h3").text();
         const newTitle = prompt("Mi a látványosság neve?", currentTitle);
 
         if (!newTitle || newTitle.trim() === "") {
@@ -74,7 +113,7 @@ $(document).ready(function () {
             return;
         }
 
-        selectedcard.find("h3").text(newTitle.trim());
+        selectedCard.find("h3").text(newTitle.trim());
     });
 
 });
